@@ -5,6 +5,12 @@ R API for [OMX](https://github.com/osPlanning/omx)
 
 It requires the [rhdf5](https://bioconductor.org/packages/release/bioc/html/rhdf5.html) v2.5.1+ package from bioconductor.
 
+```
+source("https://bioconductor.org/biocLite.R")
+library(BiocInstaller)
+biocLite("rhdf5")
+```
+
 # Transposing matrices
 The library transposes matrices when writing them to file to be in row major order like C/Python.
 
