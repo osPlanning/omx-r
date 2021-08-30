@@ -5,6 +5,15 @@ R API for [OMX](https://github.com/osPlanning/omx)
 
 It requires the [rhdf5](https://bioconductor.org/packages/release/bioc/html/rhdf5.html) v2.5.1+ package from bioconductor.
 
+For R >= 3.5:
+```
+if (!requireNamespace("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+BiocManager::install(version = "3.13")
+BiocManager::install(c("rhdf5"))
+```
+
+For older versions of R:
 ```
 source("https://bioconductor.org/biocLite.R")
 library(BiocInstaller)
